@@ -13,7 +13,7 @@ The `start_netmon.sh` script is called from within the `tstart_htb.sh` script an
 
 # Setup:
   Make a logs directory that will be used by the `start_netmon.sh` script to write tcpdump output (the script defaults to ~/logs).
-    mkdir ~/logs
+    *mkdir ~/logs
   
   Install htop to show resource usage for CPU, memory, etc.
     Debian/Ubuntu: sudo apt install htop
