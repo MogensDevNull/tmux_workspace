@@ -13,27 +13,27 @@ The `start_netmon.sh` script is called from within the `tstart_htb.sh` script an
 
 # Setup:
   Make a logs directory that will be used by the `start_netmon.sh` script to write tcpdump output (the script defaults to ~/logs).
-    - mkdir ~/logs
+    - `mkdir ~/logs`
   
   Install htop to show resource usage for CPU, memory, etc.
-    - Debian/Ubuntu: sudo apt install htop
-    - CentOS/RedHat: sudo yum install htop
+    - Debian/Ubuntu: `sudo apt install htop`
+    - CentOS/RedHat: `sudo yum install htop`
   
   Update the `tstart_htb.sh` script to reflect the correct path and name of your ovpn file so that it starts with tmux.
-    - tmux send-keys "openvpn my.ovpn" C-m
+    - `tmux send-keys "openvpn my.ovpn" C-m`
   
   Verify tcpdump is installed.
     - `tcpdump --version`
     
 # Run:
   Move the script `start_netmon.sh` to your logs directory.
-    - mv start_netmon.sh ~/logs/
+    - `mv start_netmon.sh ~/logs/`
   
   Move the script `tstart_htb.sh` to a directory in your path (/usr/bin/ as an example).
-    - sudo mv tstart_htb.sh /usr/bin/
+    - `sudo mv tstart_htb.sh /usr/bin/`
     
   Set the execution rights on script `tstart_htb.sh`.
-    - sudo chmod +x /usr/bin/tstart_htb.sh
+    - `sudo chmod +x /usr/bin/tstart_htb.sh`
     
   If you followed the above steps then just type in `tstart_htb.sh` to run.
     - If you didn't copy it to a directory in your path then change directory to where you placed it and run it via: `./tstart_htb.sh`
