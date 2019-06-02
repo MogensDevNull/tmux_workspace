@@ -11,7 +11,7 @@ The `start_netmon.sh` script is called from within the `tstart_htb.sh` script an
   - Start a packet capture using tcpdump on the VPN interface (-i tun0)
   - Keep a rolling backup of the most recent 10 pcap logs
 
-Setup:
+# Setup:
   Make a logs directory that will be used by the `start_netmon.sh` script to write tcpdump output (the script defaults to ~/logs).
     mkdir ~/logs
   
@@ -25,7 +25,7 @@ Setup:
   Verify tcpdump is installed.
     `tcpdump --version`
     
-Run:
+# Run:
   Move the script `start_netmon.sh` to your logs directory.
     mv start_netmon.sh ~/logs/
   
