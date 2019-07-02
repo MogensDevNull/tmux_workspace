@@ -32,6 +32,9 @@ The `start_netmon.sh` script is called from within the `tstart_htb.sh` script an
   Move the script `tstart_htb.sh` to a directory in your path (/usr/bin/ as an example).
     - `sudo mv tstart_htb.sh /usr/bin/`
     
+  Set the execution rights on script `start_netmon.sh`.
+    - `sudo chmod +x ~/logs/start_netmon.sh`
+    
   Set the execution rights on script `tstart_htb.sh`.
     - `sudo chmod +x /usr/bin/tstart_htb.sh`
     
